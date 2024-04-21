@@ -1,8 +1,10 @@
+const root = @import("root");
 const std = @import("std");
+const print = std.debug.print;
 const parseInt = std.fmt.parseInt;
 
 pub fn main() !void {
-    std.debug.print("hello {s} \n", .{"xgh"});
+    print("Hello, {s} \n", "xgh！");
 }
 
 test "parse Integers" {
